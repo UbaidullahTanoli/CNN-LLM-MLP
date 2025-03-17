@@ -121,6 +121,6 @@ A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM ar
 
 ## Conclusion
 
-![Training Metrics](training_validation_metrics(1).png)
+![Training Metrics](training_validation_metrics.png)
 
 The model generalised well without underfitting or overfitting. The valuation loss has consistently decreased and the valuation parameters are an indication of a remarkable ability of the combined model of LLM and CNN.
