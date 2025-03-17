@@ -127,7 +127,7 @@ The model generalised well without underfitting or overfitting. The valuation lo
 
 ## Model Performance Comparison
 
-When compared to CNN alone (repository here), LLM+CNN is far better, as CNN tends to overfit. Below is a visual representation.
+When compared to CNN alone (repository [here](https://github.com/UbaidullahTanoli/CNN)), LLM+CNN is far better, as CNN tends to overfit. Below is a visual representation.
 
 ![Training_Metrics](model_comparison.png)
 
