@@ -116,4 +116,6 @@ It's been proven that EfficientNet architecture gives slightly better accuracy p
 
 ## Conclusion
 
+![Training Metrics](train_metrics.png)
+
 The model generalised well without underfitting or overfitting. The valuation loss has consistently decreased and the valuation parameters are an indication of a remarkable ability of the combined model of LLM and CNN.
