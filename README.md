@@ -17,8 +17,12 @@ It's been proven that BioBERT can more accurately recognize medical entities and
 
 ## CNN Model
 
-Architecture of EfficientNet-B1 is used to process and convert the images into vector embeddings. EfficientNet-B1 is a Depp CNN pretarined on Medical dataset (ImageNet) and has ~6.5 Million trainable parameters.
-It's been proven that EfficientNet architecture gives slightly better accuracy per parameter. Refer to the research paper [here](https://arxiv.org/pdf/1905.11946)
+The architecture of EfficientNet-B1 is used to process and convert the images into vector embeddings. EfficientNet-B1 is a Depp CNN pretrained on Medical dataset (ImageNet) and has ~6.5 Million trainable parameters. EfficientNet‑B1 component is fine‑tuned on the dataset I used, while the BioBERT model remains frozen. I've leveraged pre‑trained knowledge from both models but only updated the image branch and the fusion MLP during training. It's been proven that EfficientNet architecture gives slightly better accuracy per parameter. Refer to the research paper [here](https://arxiv.org/pdf/1905.11946)
+
+## Multi-Layer Perceptron
+
+The outputs from EfficientNet‑B1 (≈1280‑dimensional) and BioBERT (≈768‑dimensional) are concatenated and then fed into a two‑layer MLP (with a hidden layer of 256 units) that produces the final binary classification.
+A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM architecture to mitigate overfitting by randomly deactivating 30% of the neurons during training.
 
 ## Parameters
 
@@ -27,6 +31,7 @@ It's been proven that EfficientNet architecture gives slightly better accuracy p
 | Optimizer | Adam |
 | Learning Rate | 0.003 |
 | Number of Epochs | 40 |
+| Drop out rate (Regularization) | 0.3 |
 | Train / Test data ratio | 80 : 20 |
 
 ## Results
