@@ -123,6 +123,16 @@ A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM ar
 
 ![Training Metrics](training_validation_metrics.png)
 
-The model generalised well without underfitting or overfitting. The valuation loss has consistently decreased and the valuation parameters are an indication of a remarkable ability of the combined model of LLM and CNN. When compared to CNN alone (repository here), LLM+CNN is far better, as CNN tends to overfit. Below is a visual representation.
+The model generalised well without underfitting or overfitting. The valuation loss has consistently decreased and the valuation parameters are an indication of a remarkable ability of the combined model of LLM and CNN. 
+
+## Model Performance Comparison
+
+When compared to CNN alone (repository here), LLM+CNN is far better, as CNN tends to overfit. Below is a visual representation.
 
 ![Training_Metrics](model_comparison.png)
+
+**Key Insights**:
+- CNN+LMM achieves **96.65%** final validation F1 vs CNN's 76.35%
+- CNN+LLM achieves **26.6%** higher final F1-score (0.9665 vs 0.7635)
+- Multimodal model shows better stability (smoother loss curve)
+- Text integration helps prevent catastrophic failures (worst F1 28% higher)
