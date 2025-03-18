@@ -136,3 +136,12 @@ When compared to CNN alone (repository [here](https://github.com/UbaidullahTanol
 - CNN+LLM achieves **26.6%** higher final F1-score (0.9665 vs 0.7635)
 - Multimodal model shows better stability (smoother loss curve)
 - Text integration helps prevent catastrophic failures (worst F1 28% higher)
+
+## Further Improvements
+
+The accuracy of the CNN+LLM model can be improved, if considerable computational resources are available, by following the following points:
+
+- Use the MIMIC-CXR dataset containing paired chest X-rays and radiology reports (377,110 images and 227,827 reports). The dataset measures 1.7TB.
+- Use data augmentation of the images to help the CNN model generalise well.
+- Use bigger CNN models like EfficientNet B7.
+- Use [BiMediX2’s](https://github.com/mbzuai-oryx/BiMediX2) projector layer to map CNN and LLM embeddings into a shared space for better alignment.
