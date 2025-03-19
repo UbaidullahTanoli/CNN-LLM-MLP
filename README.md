@@ -44,6 +44,13 @@ A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM ar
 
 ## Results
 
+**Model Evaluation Metrics**:
+- Loss
+- Accuracy
+- Precision
+- Recall
+- F1
+
 | Epoch | Phase | Loss    | Accuracy | Precision | Recall  | F1-Score |
 |-------|-------|---------|----------|-----------|---------|----------|
 | 1     | Train | 0.3590  | 0.8421   | 0.8681    | 0.8891  | 0.8785   |
