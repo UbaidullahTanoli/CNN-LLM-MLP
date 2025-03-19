@@ -26,12 +26,20 @@ A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM ar
 
 ## Parameters
 
+**Tech Stack**:
+- Python
+- NumPy
+- Pandas
+- Torch
+- Scikit-Learn
+
 | Parameters | Specification |
 | --- | --- |
 | Optimizer | Adam |
+| Loss Function | Cross Entropy |
 | Learning Rate | 0.003 |
 | Number of Epochs | 40 |
-| Drop out rate (Regularization) | 0.3 |
+| Dropout rate (Regularization) | 0.3 |
 | Train / Test data ratio | 80 : 20 |
 
 ## Results
