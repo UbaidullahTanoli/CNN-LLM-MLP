@@ -39,8 +39,8 @@ A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM ar
 | Loss Function | Cross Entropy |
 | Learning Rate | 0.003 |
 | Number of Epochs | 40 |
-| Dropout rate (Regularization) | 0.3 |
-| Number of parameters bring trained | 524,800 |
+| Dropout rate on Layer 1 | 0.3 |
+| Number of parameters bring trained | 525,058 |
 | Train / Test data ratio | 80 : 20 |
 
 ## Results
