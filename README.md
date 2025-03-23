@@ -30,7 +30,7 @@ A dropout rate of 0.3 was incorporated in the fusion MLP layer of the CNN+LLM ar
 - Python
 - NumPy
 - Pandas
-- Torch
+- PyTorch
 - Scikit-Learn
 
 | Parameters | Specification |
