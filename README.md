@@ -5,7 +5,7 @@ The output from the CNN and LLM is converted into a vector embedding that's inpu
 ![image](https://github.com/user-attachments/assets/3157fcbe-2f1f-46d5-94db-3fcc2f9a7077)
 
 
-## Data
+## Data 
 Indiana University Chest X-ray dataset was used in the project.
 The dataset contains 7,470 pairs of images and reports and measures 14.19 GB.
 IU X-ray (Demner-Fushman et al., 2016) can be accessed [here](https://www.kaggle.com/datasets/raddar/chest-xrays-indiana-university)
